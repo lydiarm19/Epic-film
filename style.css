@@ -1,0 +1,270 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(173, 40, 230);
+    color: white;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.cabecera_logo img{
+    height: auto;
+    width: 100%;
+}
+
+.cabecera_logo{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.cabecera_texto{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li{
+    margin-right: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction:row;
+}
+
+.container_grande{
+    width: 65%;
+    padding: 20px;
+    background-color: rgb(237, 211, 124);
+}
+
+.container_grande-top{
+    text-align: center;
+    
+}
+
+.container_grande-bottom{
+    display: flex;
+}
+
+
+@keyframes desvanecer {
+  0% { letter-spacing: normal; }
+  100% { letter-spacing: 2em; opacity: 0; }
+}
+
+
+@media (max-width: 1200px) {
+  .desvanecer {
+    font-size: 3em; 
+  }
+}
+
+@media (max-width: 768px) {
+  .desvanecer {
+    font-size: 2em; 
+  }
+}
+.imagen_pelis-top{
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+    transition: width 0.5s;
+    
+}
+
+.imagen_pelis-top:hover{
+  width: 250px;
+}
+
+.sinopsis{
+    background-color: rgb(237, 211, 124); 
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.sinopsis:hover{
+    background-color: lightblue;
+}
+.container_pequeno{
+    width: 35%;
+    padding: 20px;
+    background-color: #60f6da;
+    
+}
+
+.botones{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.comment-box {
+  border: 1px solid #000;
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-color: #fff;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.movie-info {
+  width: 75%;
+  text-align: center;
+}
+
+.movie-info img {
+  max-width: 100%;
+  height: auto;
+}
+#banner {
+    background-color: #f1ad1c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 15%;
+  }
+  
+  #movies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 85%;
+    text-align: center;
+    
+  }
+
+  @media screen and (max-width: 900px) {
+    #container {
+      flex-direction: column;
+    }
+  
+    #banner, #movies {
+      width: 100%;
+    }
+  
+    .movie {
+      width: 48%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .movie {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+    .movie {
+      width: 48%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .movie {
+      width: 100%;
+    }
+  }
+
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .contact-info,
+  .contact-form {
+    max-width: 400px;
+    margin: 0 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .comment-box {
+        width: 100%; 
+        max-width: none; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+div{
+  margin-bottom: 30px;
+}
